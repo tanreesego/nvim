@@ -26,9 +26,11 @@ return {
 				map("<leader>vca", vim.lsp.buf.code_action, "[C]ode [A]ction")
 				map("<leader>vrr", vim.lsp.buf.references, "[R]eferences")
 				map("<leader>vrn", vim.lsp.buf.rename, "[R]e[n]ame")
-				map("[d", vim.diagnostic.goto_next, "Next Diagnostic")
-				map("]d", vim.diagnostic.goto_prev, "Previous Diagnostic")
+				map("]d", vim.diagnostic.goto_next, "Next Diagnostic")
+				map("[d", vim.diagnostic.goto_prev, "Previous Diagnostic")
 				map("<C-h>", vim.lsp.buf.signature_help, "Signature Help", "i")
+				map("<leader>vh", vim.lsp.buf.document_highlight, "LSP Buf Reference Highlight", "n")
+				map("<leader>vc", vim.lsp.buf.clear_references, "Clear LSP Buf Reference Highlight", "n")
 
 				-- Highlight word under cursor
 				-- if client.supports_method("textDocument/documentHighlight") then
@@ -53,7 +55,6 @@ return {
 				-- 	})
 				-- end
 			end
-
 			-- ================================
 			-- LSP server configurations
 			-- ================================
