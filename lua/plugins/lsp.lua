@@ -65,7 +65,7 @@ return {
 						python = {
 							analysis = {
 								autoSearchPaths = true,
-								diagnosticMode = "openFilesOnly",
+								diagnosticMode = "workspace",
 								useLibraryCodeForTypes = true,
 							},
 						},
@@ -104,7 +104,7 @@ return {
 				},
 				signs = true,
 				underline = true,
-				update_in_insert = false,
+				update_in_insert = true,
 				float = {
 					focusable = false,
 					style = "minimal",

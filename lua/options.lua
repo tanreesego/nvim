@@ -1,4 +1,3 @@
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- Make line numbers default
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
