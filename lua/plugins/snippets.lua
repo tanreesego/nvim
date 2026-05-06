@@ -10,11 +10,18 @@ return {
 
 		config = function()
 			local ls = require("luasnip")
+			-- For custom snippets
+			-- local s = ls.snippet
+			-- local t = ls.text_node
+			-- local i = ls.insert_node
 
+			-- load friendly snippets
 			require("luasnip.loaders.from_vscode").lazy_load()
 
+			-- JS doc extension
 			ls.filetype_extend("javascript", { "jsdoc" })
 
+			-- keymaps
 			vim.keymap.set({ "i" }, "<C-s>e", function()
 				ls.expand()
 			end, { silent = true })

@@ -17,5 +17,11 @@ return {
 		vim.keymap.set("n", "<leader>gb", builtin.git_branches) -- list branches, checkout or diff
 		vim.keymap.set("n", "<leader>gs", builtin.git_status) -- changed files, stage with <tab>
 		vim.keymap.set("n", "<leader>gst", builtin.git_stash) -- list stashes, apply on <cr>
+
+		-- LSP / Symbols
+		vim.keymap.set("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>") -- symbols in current file
+		vim.keymap.set("n", "<leader>fw", "<cmd>Telescope lsp_workspace_symbols<cr>") -- symbols across project
+		vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics bufnr=0<cr>") -- current buffer
+		vim.keymap.set("n", "<leader>fD", "<cmd>Telescope diagnostics<cr>") -- all files
 	end,
 }

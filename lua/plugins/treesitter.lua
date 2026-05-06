@@ -18,11 +18,15 @@ return {
 			"vimdoc",
 			"zig",
 			"python",
+
 			"javascript",
 			"typescript",
-			"svelte",
-			"html",
+			"tsx",
+			"jsx",
+
+			"json",
 			"css",
+			"svelte",
 		}
 		require("nvim-treesitter").install(parsers)
 

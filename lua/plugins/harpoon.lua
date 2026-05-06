@@ -38,6 +38,10 @@ return {
 			harpoon:list():select(4)
 		end)
 
+		vim.keymap.set("n", "<C-;>", function()
+			harpoon:list():select(5)
+		end)
+
 		-- previous / next
 		vim.keymap.set("n", "<C-S-P>", function()
 			harpoon:list():prev()
